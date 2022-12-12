@@ -1,0 +1,202 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mi tercera página</title>
+	</head>
+	<body>
+	
+		<style>
+		.timeline{
+			margin-top: 40px;
+			margin-bottom; 40px;
+			position: relative;
+		}
+
+		.timeline:before{
+			content: '';
+			position: absolute;
+			left: 50%;
+			width: 2px;
+			height: 100%;
+			backgroud: #6658ea
+		}
+		
+		.content{border: #6658ea 1px solid; padding: 20px; border-radius: 20px; color: royalblue;}
+		.timeline ul{ margin: 0; padding: 0}
+		.timeline ul li{
+			list-style: none;
+			position: relative;
+			width: 50%;
+			padding: 20px 40px;
+			box-sizing: border-box;
+		}
+		
+		.timeline ul li:nth-child(odd){
+			float: left;
+			text-align: right;
+			clear: both;
+		}
+		
+		.timeline ul li:nth-child(odd)::before{
+			content: '';
+			position: absolute;
+			top: 40px;
+			right: -14px;
+			width: 20px;
+			height: 20px;
+			background: white;
+			border: 2px solid #6658ea;
+			border-radius: 50%
+		}
+	
+		.timeline ul li:nth-child(odd)::after{
+			content: '';
+			position: absolute;
+			border-style: solid;
+			width: 0;
+			height: 0;
+			top: 44px;
+			right: 25px;
+			border-width: 10px 15px 10px 0px;
+			bordercolor: transparent #6658ea transparent transparent;
+		}
+		
+		@media all and (max-width: 768px){
+			.timeline:before{
+				left: 0%
+			}
+			.timeline ul li{
+				width: 100%;
+			}
+			.timeline ul li:nth-child(odd){
+				float: right;
+				text-align: left;
+			}
+			.timeline ul li:nth-child(odd)::before{
+				left: -10px
+			}
+			.timeline ul li:nth-child(odd)::after{
+				left: 25px;
+				border-width: 10px 15px 10px 0px;
+				border-color: transparent #6658ea transparent transparent;
+			}
+		}
+		
+		</style>
+		<div class="timeline">
+			<ul>
+				<li>
+					<div class="content">
+						<h2><font color="black">DRONES A TRAVES DEL TIEMPO</font></h2>
+						
+						<p><font color="black"><span>1849</span></p>
+						
+						<p>El 22 de agosto, el ejercito austriaco lanzo globos de explosivos hacia la ciudad de Venecia. Al llegar se hacían caer mediante un dispositivo eléctrico. Los globos se lanzaron desde el navío Vulcan.</p>
+					
+						</font>
+					</div>
+					
+				</li>
+				
+				<li>
+					<div class="content">
+						
+						<p><font color="black"><span>1915</span></p>
+						
+						<p>Nikola Tesla propone al Reino Unido el concepto para una flota de vehículos aéreos no tripulados.</p>
+						
+						</font>
+					</div>
+				</li>
+				
+				<li>
+					<div class="content">
+						<p><font color="black"><span>1916</span></p>
+						<p>Las primera aeronaves no tripuladas fueron construidas durante y justamente después de la IGM. El primero fue el "Aerial Target".</p>
+					</div></font>
+				</li>
+				
+				<li>
+					<div class="content">
+						<p><font color="black"><span>1916</span></p>
+						<p>Las primera aeronaves no tripuladas fueron construidas durante y justamente después de la IGM. El primero fue el "Aerial Target".
+					</div></font>
+				</li>
+				
+				<li>
+					<div class="content">
+						<p><font color="black"><span>1936</span></font></p>
+						<p><font color="black">El termino drone es utilizado por primera vez por Delmar Fahrney, de la Marina de los EEUU en referencia a aviones contralados por radios. Se inicio un programa de investigación de baja prioridad.</font></p>
+					</div>
+				</li>
+				
+				<li>
+					<div class="content">
+						<p><font color="black"><span>1951</span></font></p>
+						<p><font color="black">EEUU lanza la producción en serie del AQM-34 destinado a operaciones de reconocimiento. Lanzado desde un avión-madre, al terminar descendía en paracaídas. Se uso durante 30 años.</font></p>
+					</div>
+				</li>
+				
+				<li>
+					<div class="content">
+						<p><font color="black"><span>1961 a 1975</span></p>
+						<p>Se generaliza el uso de UAV's como aeronaves de reconocimiento en territorios de guerra. El AQM-34 realizado mas de 3.400 misiones.
+						</p></font>
+					</div>
+				</li>
+						
+				<li>
+					<div class="content">
+						<p><font color="black"><span>1994</span></p>
+						<p>La mayor disponibilidad del sistema de posicionamiento global. y de las comunicaciones satélite liberó a los UAS de operar dentro del alcance de la señal de radio y de los sistemas de navegación inexactos basados en giróscopos y datos de aire.
+						</p></font>
+					</div>
+				</li>
+				
+				<li>
+					<div class="content">
+						<p><font color="black"><span>1999</span></p>
+						<p>El desarrollo de los drones peruanos empezó en 1999, cuando se creó un primer prototipo, el RT – 1, que realizó pruebas exitosas en Collique. El segundo prototipo o RT – 2 se estrelló al sur de Lima y todo el proyecto se vino abajo junto a él.
+						</p></font>
+					</div>
+				</li>
+				
+				<li>
+					<div class="content">
+						<p><font color="black"><span>2004</span></p>
+						<p>FAP revivió el asunto bajo el nombre de Proyecto Cóndor. Se diseñó un nuevo prototipo con cuatro cámaras digitales y un sistema FLIR de dirección calórica con autonomía de 300 km y una carga útil de 22 kg. Un año después, el proyecto se volvió a dormir por falta de presupuesto.
+						</p></font>
+					</div>
+				</li>
+				
+				<li>
+					<div class="content">
+						<p><font color="black"><span>2014</span></p>
+						<p>La Municipalidad de Jesús María presentó su primer drone, el cual será utilizado desde fines de abril. El vehículo aéreo no tripulado de observación terrestre apoyará en tres labores: seguridad ciudadana, reporte aéreo y catastro.
+						</p></font>
+					</div>
+				</li>
+				
+				<li>
+					<div class="content">
+						<p><font color="black"><span>2015</span></p>
+						<p>El Ministerio de Cultura completó el registro de 375 sitios arqueológicos donde con la ayuda de los drones se logra obtener ortofotos, mapas temáticos, diseños 3D y videos aéreos de los sitios arqueológicos, los cuales serán empleados para su investigación y registro catastral.<br>
+						Ese mismo año Mónica Abarca desarrolló dron que detecta contaminación del aire, el dispositivo podrá detectar si los pueblos cercanos a las minas se ven afectados por contaminantes.<br>
+						La Municipalidad de Lima usará drones para resguardar la seguridad de los miles de comerciantes y compradores que acudirán al Mercado Central y a Mesa Redonda en esta campaña navideña <br>
+						</p></font>
+					</div>
+				</li>
+						
+				<li>
+					<div class="content">
+						<p><font color="black"><span>2016</span></p>
+						<p>Amazon marca un hito en su historia con primera entrega vía dron.
+						</p></font>
+					</div>
+				</li>
+				<div style="clear: both"></div>
+			</ul>
+		</div>
+	</body>
+</html>
